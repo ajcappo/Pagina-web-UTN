@@ -1,0 +1,1417 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.desplegable{
+    display:none;
+    
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #ececec;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+
+header, section, footer{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+h1{
+    font-size: 30px;
+    margin:0;
+    line-height:105px;
+    text-align: center;
+    color:#3D4039;
+}
+
+
+header{
+    position: relative;
+    top: 0px;
+    height:105px;
+    
+    
+}   
+
+    #marca {
+        width: 70%;
+        
+        
+        /* background: coral; */
+    }
+            #redes{
+                
+                position:absolute;
+                right: 0;
+                top: 0;
+
+                /* display: flex;
+                flex-direction: column; */
+
+                width: 30%;
+                
+                
+                /* background-color:greenyellow; */
+                
+            }
+            
+            
+            .btn_redes{
+                
+                display: flex; 
+                justify-content: space-evenly;
+                align-items: center;
+
+                height:105px;
+
+                list-style-type: none;
+
+                margin:0;
+                padding:0;
+                
+                /* background-color: aqua; */
+                
+            }
+            
+            
+
+
+                .btn_redes a:hover {
+                    
+                    float: left;
+                    transform: scale(1.1);
+                    
+
+                    
+                    
+                }
+
+                
+                .btn_redes img {
+                    
+                    width:50px;
+                    height: 50px;
+                    
+
+                }
+            
+/* BOTONERA PRINCIPAL */
+
+    #botonera{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 960px;
+        height: 75px;
+        margin: 0 auto 0;
+        background-color: #ececec;
+        
+    }
+
+        .botones{
+            position: sticky;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(90, 151, 221);
+            width: 100%;
+            height: 75px;
+            padding: 0px;
+            margin: 0 ;
+            list-style-type: none;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+            .botones li{
+                width:auto;
+                height: 100%;
+                text-decoration: none;
+                text-align: center;
+                font-size: 1rem;
+                line-height:75px;
+
+            }
+
+            .botones li a{
+                display: inline-block;
+                text-decoration: none;
+                color: rgb(255, 255, 255);  
+                width:100%; 
+                padding-left:30px;
+                padding-right: 30px
+
+                
+            }
+
+            .botones li a:hover{
+                background-color: rgb(19, 97, 214);
+                font-size: 1.1rem;
+                border-radius: 5px;;
+                font-weight: bold;
+                color:rgb(255, 255, 255);
+                transform: scale(1.1);
+                cursor:pointer;
+
+            }
+
+            .botones li a[href^="#marca"]:hover{
+                border-radius: 20px 8px 8px 8px;
+            }
+
+            .botones li a[href^="#contacto"]:hover{
+                background-color: rgb(139, 214, 19);
+
+                border-radius: 8px 20px 8px 8px;
+            }
+
+/* Fin botonera principal element*/
+
+
+            h2{
+                padding-top: 75px;
+                padding-bottom: 0.8rem;
+                margin:0;
+            
+                font-size:2rem;
+            
+                text-align: center;
+                text-transform: uppercase;
+            
+                color: #77baf1;
+                
+            }
+
+
+
+
+/* Inicio sobre mi*/
+
+#sobre_mi  {
+    position: relative;
+    background-color: #3D4039;
+    width:960px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-radius: 0px  0px 15px 15px;
+
+}
+
+.parrafos{
+    float: left;
+    text-indent:2rem;
+    width: 45%;
+
+}
+
+.p_sobre_mi{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;;
+    font-size: 1.3rem;
+    color:rgb(255, 255, 255);
+    
+
+}
+
+#img_sobre_mi{
+    float: right;
+    width:50%;
+    height:auto;
+    margin-right: 2%;
+    
+    
+}
+
+#img_sobre_mi img{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+
+/* Fin Sobre mi */
+
+/* Inicio Contacto */
+#Contacto{
+    position: relative;
+    overflow:hidden;
+    display:flex;
+    min-height:auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: #303030;
+    border-radius:  15px;
+    
+  
+  
+}
+
+.modal {
+    position: fixed;
+
+   padding:0;
+    z-index: 1055;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.178)
+    
+
+}
+
+
+
+.bg-modal{
+    top:20%;
+    background-color: #303030;
+    border-bottom: none;
+    border: none;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+.modal-dialog{
+    min-width: 100%;
+
+ 
+
+
+}
+
+
+#Intereses{
+    position: relative;
+    overflow:hidden;
+    
+    min-height:auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: #3D4039;
+    border-radius:  15px 15px 0px 0px;
+    
+
+}
+
+
+#mod_bstp1{
+    background-color: #303030;
+    margin:3px;
+    padding:3px;
+    border-radius: 10px;
+}
+
+
+#mod_bstp2{
+    margin:3px;
+    padding:3px;
+    border-radius: 10px;
+
+}
+.input-group-text{
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.card-bkg{
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    background-color: #e02323;
+
+
+}
+
+.card{
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    background-color: #303030;
+    
+    
+}
+
+
+
+
+
+
+.card-img-top{
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+    border: 1px solid #303030;
+    margin: 10px;
+}
+
+.btn-submit{
+    border-radius: 10px;
+    width: 100%;
+    height:50px;
+    font-size:1.5rem;
+    margin-bottom:10px;
+    background-color: rgb(139, 214, 19);
+}
+
+
+.btn-submit:hover{
+    background-color: rgb(161, 255, 10);
+
+}
+
+.btn-ig{
+    background-color: #77baf1;
+    border-radius: 10px;
+
+}
+
+.card-title{
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+/* Fin Boostrap */
+
+
+/* Inicio Construcciones*/
+
+#construcciones{
+    position: relative;
+    overflow:hidden;
+    
+    min-height:auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: #3D4039;
+    border-radius: 15px;
+}
+
+.contenedorImagen{
+     width: 90%;
+     height: 600px;
+     margin-left:auto;
+     margin-right: auto;
+     border-radius: 15px;
+     padding-bottom: 20px;
+
+ 
+}
+.slider{
+    align-items: center;
+    margin:10px;
+    padding:0px;
+    display:flex;
+    flex-direction: row;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+
+
+/* Inicio Restauraciones*/
+
+
+#restauraciones  {
+    position: relative;
+
+    background-color: #3D4039;
+    min-height: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-radius:  15px;
+
+
+}
+
+
+
+
+    .nav-pills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .btn-rest{
+        background-color:  #3a3a3a;
+        color:white;
+        border: none;
+        margin:5px 15px;
+        padding:10px 25px;
+        font-size: 5rem;
+
+        border-radius:10px;
+    }
+
+    .btn-rest.active{
+        background-color: rgb(19, 97, 214)
+      }
+ 
+
+.productoRestaurado{
+    background-color: rgb(34, 34, 34);
+    padding-top:20px;
+    margin: 5px 20px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+    .productoRestaurado p{
+        width: 95%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    .productoRestaurado p strong{
+        font-size: 1.5rem;
+        
+    }
+
+
+    #img_rest{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+    
+    }
+    
+    
+    #img_rest img{
+        width: auto;
+        height: 300px;
+        border-radius: 15px 15px 15px 15px;
+
+    }
+
+/* Fin Restaurado */
+
+
+
+/* Inicio Footer*/
+
+
+
+#datos_pie{
+    position: relative;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    height: auto;
+    background-color: rgb(90, 151, 221);
+    border-radius: 0px 0px 15px 15px;
+    overflow:hidden;
+    }
+
+    .copy{
+        width: 65%;
+        padding:20px;
+    }
+
+    #btn_pie{
+        position: relative;
+        padding: 10px;
+        background-color: #2c2c2c;
+        width: 35%;
+    }
+
+    .h2_footer{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin:0;
+        font-size:1rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #77baf1;
+    }
+
+    #datos_pie p{
+        text-align: center;
+        margin:0;
+        color: #fff;
+    }
+
+/* Fin footer */
+
+/* inicio BTN_SUBIR */
+.btn_subir{
+    display: fixed;
+}
+/* fin BTN_SUBIR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+    /* inicio @media 600 a 1023px */
+
+@media all and (min-width:768px) and (max-width:992px){
+
+    header, section, footer{
+        width: 580px;
+    }
+    
+    
+    
+    
+    
+    header{
+        position: relative;
+        top: 0px;
+        height:80px;
+        
+        
+    }   
+    
+    h1{
+        font-size:1.2rem;
+        line-height: 80px;
+    }
+
+
+                
+                
+                .btn_redes{
+                    
+                    height:80px;
+
+                }
+                
+                
+                .btn_redes a img {
+                       transform: scale(0.7)
+                        
+                        
+                    }
+
+                    
+        /* BOTONERA PRINCIPAL */
+        
+            #botonera{
+                width: 580px;
+                height: 50px;
+                        
+            }
+        
+                .botones{
+                    width: 100%;
+                    height: 50px;
+                }
+        
+        
+                    .botones li{
+                        font-size: .7rem;
+                        line-height:50px;
+                        }
+                
+                
+                            .botones li a{
+                                font-size: 0.75rem;
+                                border-radius: 5px;;
+                                font-weight: bold;
+                                color:rgb(255, 255, 255);
+                                transform: scale(1.1);
+        
+                                padding-left:10px;
+                                padding-right: 10px
+                
+                                
+                            }
+                
+                            .botones li a:hover{
+                                font-size: 0.85rem;
+               
+                            }
+                
+                            .botones li a[href^="#marca"]:hover{
+                                border-radius: 15px 5px 5px 5px;
+                            }
+        
+                            .botones li a[href^="#datos"]:hover{
+                                border-radius: 5px 15px 5px 5px;
+                            }
+                        
+
+    /* FIN BOTONERA PRINCIPAL */
+
+    h2{
+        font-size:1.8rem;
+    }
+
+
+
+/* Inicio sobre mi*/
+
+#sobre_mi  {
+    width:580px;
+    padding-bottom: 0px;
+}
+
+.parrafos{
+    float: none;
+    text-indent:2rem;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.p_sobre_mi{
+    font-size: 1.1rem;
+    padding-bottom: 0px;
+}
+
+#img_sobre_mi{
+    float: none;
+    width:100%;
+    padding: 0px 20px;
+       
+}
+
+
+
+
+
+
+
+
+/* Fin Sobre mi */
+
+
+/* Inicio Boostrap*/
+
+
+
+/* Fin Boostrap */
+
+
+/* Inicio Construcciones*/
+.contenedorImagen{
+     width: 90%;
+     height: 500px;
+     margin-left:auto;
+     margin-right: auto;
+     border-radius: 15px;
+
+
+ 
+}
+
+.slider{
+    
+    align-items: center;
+    margin:10px;
+    padding:0px;
+    display:flex;
+    flex-direction: row;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+}
+
+
+/* Fin Construcciones */
+
+.box img{
+    display: flex;
+    object-fit: contain;
+     
+}
+
+
+
+
+/* Fin Construcciones */
+
+
+/* Inicio Restaurado*/
+
+
+.btn-rest{
+    font-size: 0.8rem;
+    border-radius:8px;
+    padding:8px 20px;
+
+
+}
+
+
+
+
+
+.productoRestaurado{
+    background-color: rgb(34, 34, 34);
+    padding-top:20px;
+    margin: 5px 20px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+    .productoRestaurado p{
+        font-size: 0.9rem;
+    }
+
+    .productoRestaurado p strong{
+        font-size: 1.4rem;
+            }
+
+
+    #img_rest{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    
+    #img_rest img{
+        width: 50%;
+        height: auto;
+        border-radius: 15px 15px 15px 15px;
+        padding: 10px;
+    }
+
+/* Fin Restaurado */
+/* Inicio Boostrap*/
+
+
+
+
+
+
+
+.card-img-top{
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    border: 1px solid #303030;
+    margin: 10px;
+}
+
+.btn-submit{
+    font-size:1.2rem;
+}
+
+
+.card-title{
+    font-size: 0.8rem;
+}
+
+.btn-ig{
+    background-color: #77baf1;
+    border-radius: 10px;
+    font-size:0.8rem;
+
+}
+/* Fin Boostrap */
+
+
+/* Inicio Footer*/
+
+    .h2_footer{
+        font-size:0.8rem;
+    }
+
+    #datos_pie p{
+        text-align: center;
+        margin:0;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+
+/* Fin footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /*------------------------------------------------------------*/
+    
+    
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+    /* inicio @media <599px */
+
+@media all and (max-width:767px){
+
+    header, section, footer{
+        width: 375px;
+    }
+    
+    
+    .desplegable{
+        display: flex;
+        position:relative;
+        width: 375px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:rgb(90, 151, 221);;
+        flex-direction: column;
+        align-items: flex-start;;
+        justify-content: space-evenly;
+        text-align: center;
+        padding:0;
+
+        
+        
+        line-height:55px;
+        border-radius: 15px;
+        
+    }
+    
+   #nav_button{
+        display: inline;
+                float: left;
+        height:55px;
+        font-size: 30px;
+        color: #fff;
+        border: none;
+        background-color:rgba(144, 238, 144, 0);
+        transform: rotate(270deg);
+        margin:0;
+        margin-left: 10px;
+        padding: 0;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+    
+    .nav-enlace{
+        display:none;
+    }
+
+
+    .aparece{
+        display: flex;
+    }
+
+ 
+    
+    .enlaces {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding:0;
+        margin:0;
+    }
+    .enlaces > a {
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    
+    header{
+        position: relative;
+        top: 0px;
+        height:60px;
+    }
+        
+    #marca {
+        width: 70%;
+        height: 60px;
+    }
+    
+    
+    h1{
+        font-size:1.5rem;
+        line-height:1.25em;
+    }
+
+
+    #redes {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30%;
+        height:60px;
+    }  
+  
+
+
+
+
+    .btn_redes{
+                
+        display: flex; 
+        justify-content: space-evenly;
+        align-items: center;
+
+        height:60px;
+
+        list-style-type: none;
+
+        margin:0;
+        padding:0;
+        
+        /* dupli; */
+        
+    }
+    
+    .btn_redes img {
+        width: 30px;
+        height: 30px;
+    }
+
+        
+/* BOTONERA PRINCIPAL */
+
+#botonera{
+    display: none;
+
+
+    
+    
+}
+
+    .botones{
+        position: relative;
+        
+        display: flex;
+        align-items: center;
+       flex-direction: column;
+
+        background-color: rgb(90, 151, 221);
+        width: 375px;
+        height: auto;
+        list-style-type: none;
+        text-align: center;
+        border-radius: 0px;
+
+    }
+
+    
+    .btn-contacto{
+        position: relative;
+        
+        display: flex;
+        align-items: center;
+       flex-direction: column;
+
+        background-color: rgb(90, 151, 221);
+        width: 375px;
+        height: auto;
+        list-style-type: none;
+        text-align: center;
+        border-radius: 0px;
+        border:none;
+
+    }
+    
+    
+    .botones li{
+        float: left;
+        
+        width:100%;
+        height: auto;
+        
+        text-decoration: none;
+        text-align: center;
+        font-size: 1rem;
+        line-height:40px;
+
+    }
+    
+    .botones li a{
+        display: inline-block;
+        
+        text-decoration: none;
+        color: rgb(255, 255, 255);  
+        width:100%; 
+            
+        }
+
+    .aparece{
+        display: flex;
+        justify-content: center;
+    }
+
+        .nav-enlace:hover{
+            width:100%;
+            display: flex;
+            align-items: center;
+            background-color: rgb(19, 97, 214);
+            font-size: 1.1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            color:rgb(255, 255, 255);
+            transform: scale(1.02);
+            cursor:pointer;
+            margin-left: 0;
+            margin-right: 0;
+
+        }
+
+        .nav-enlace[href^="#contacto"]:hover{
+            background-color: rgb(139, 214, 19);
+        }
+
+    
+    /* FIN BOTONERA PRINCIPAL */
+
+    /* FIN BOTONERA PRINCIPAL */
+
+    h2{
+        font-size:1.2rem;
+        padding-top: 20px;
+    }
+
+
+
+/* Inicio sobre mi*/
+
+#sobre_mi  {
+    width:375px;
+    border-radius: 15px
+}
+
+.parrafos{
+    text-indent:1rem;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.p_sobre_mi{
+    font-size: 0.9rem;
+    padding-bottom: 0px;
+}
+
+#img_sobre_mi{
+    float: none;
+    width:100%;
+    padding: 0px 20px;
+     
+}
+
+
+
+
+
+
+
+/* Fin Sobre mi */
+
+
+/* Inicio Construcciones*/
+
+
+.contenedorImagen{
+     height: 400px;
+     overflow: hidden;
+
+ 
+}
+.slider{
+    align-items: center;
+    margin:10px;
+    padding:0px;
+    display:flex;
+    flex-direction: row;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+/* Fin Construcciones */
+
+
+
+
+
+/* Inicio Restaurado*/
+
+#restauraciones  {
+    min-height: auto;
+
+
+}
+
+.nav-pills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    flex-direction: row;
+}
+.btn-rest{
+    padding:5px 12px;
+    font-size: 0.6rem;
+    border-radius:6px;
+}
+
+
+
+
+    .productoRestaurado p{
+        font-size: 0.8rem;
+    }
+
+    .productoRestaurado p strong{
+        font-size: 1.2rem;
+            }
+
+
+    #img_rest{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    
+    #img_rest img{
+        width: 100%;
+        padding: 0px;
+        margin: 5px
+    }
+
+
+    #img_rest img:hover{
+        outline:  2px solid #ffffff;
+        cursor:pointer;
+        }
+    
+        #img_rest img:active{
+        width: 90%;
+        height:auto;
+    
+    
+        position: absolute;
+        margin-left: 15px;
+        margin-right: 15px;        
+        z-index: 9999;
+        outline:  2px solid #77baf1;
+    
+    }
+
+/* Fin Restaurado */
+
+
+.card-img-top{
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    border: 1px solid #303030;
+    margin: 10px;
+}
+
+.btn-submit{
+    font-size:1.1rem;
+}
+
+
+.card-title{
+    font-size: 0.7rem;
+}
+
+.btn-ig{
+    background-color: #77baf1;
+    border-radius: 10px;
+    font-size:0.7rem;
+
+}
+/* Inicio Footer*/
+
+
+
+#datos_pie{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .copy{
+        width: 100%;
+        padding:20px;
+    }
+
+    #btn_pie{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .h2_footer{
+        padding: 0px;
+    }
+
+
+/* Fin footer */
+
+.btn_subir{
+    position:fixed;
+    display:flex;
+    width: 40px;
+    height: 40px;
+    background-color: #77baf1;
+    bottom: 20px;
+    right: 20px;
+    margin: 0px;
+    padding: 0px;
+    border-radius:50%;
+    border: none;
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn_subir a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    font-size: 30px;
+    line-height:30px;
+}
+
+
+
+
+.btn_subir:hover{
+        background-color: #3ea3f7;
+        font-weight: bold;
+        transform: scale(1.1);
+        cursor:pointer;
+        
+        
+    }
+    
+}
