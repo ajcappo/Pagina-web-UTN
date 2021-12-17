@@ -1,6 +1,6 @@
 # Proyecto-Final
 Proyecto Final - Nivel Inicial de Programación Web - Diplomatura UTN Frre
-https://ajcappo.github.io/Proyecto-Final/
+https://ajcappo.github.io/Pagina-web-UTN/
 
 
 Durante 12 semanas fui armando este proyecto para la primera etapa de la Diplomatura.
